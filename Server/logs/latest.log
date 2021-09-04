@@ -158,3 +158,5 @@
 [23:12:18] [Server thread/INFO]: Mmortarr issued server command: /p
 [23:12:24] [Server thread/INFO]: Mmortarr issued server command: /plugins
 [23:12:29] [Server thread/INFO]: Mmortarr issued server command: /hello
+[23:19:40] [Server thread/INFO]: Mmortarr lost connection: Disconnected
+[23:19:40] [Server thread/INFO]: Mmortarr left the game
