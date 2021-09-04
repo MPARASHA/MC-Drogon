@@ -1,0 +1,8 @@
+name: Drogon
+version: 1.0
+author: Mmortarr
+main: me.mparasha.drogon.Main
+
+commands:
+  hello:
+    aliases: [hi]
