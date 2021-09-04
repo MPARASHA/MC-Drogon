@@ -55,6 +55,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:desert": "2021-09-04 00:15:09 -0600",
       "minecraft:beach": "2021-09-03 22:40:26 -0600",
       "minecraft:river": "2021-09-03 23:11:50 -0600",
       "minecraft:plains": "2021-09-03 22:32:55 -0600"

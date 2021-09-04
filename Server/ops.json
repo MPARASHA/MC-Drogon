@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "875b8291-ef76-4c55-9edc-82effa74acc0",
+    "name": "Mmortarr",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
