@@ -6,3 +6,5 @@ main: me.mparasha.drogon.Main
 commands:
   hello:
     aliases: [hi]
+  drogon:
+    aliases: [dragon]

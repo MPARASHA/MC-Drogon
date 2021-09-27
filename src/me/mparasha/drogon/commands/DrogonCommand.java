@@ -3,16 +3,23 @@ package me.mparasha.drogon.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.craftbukkit.v1_17_R1.entity.CraftEnderDragon;
 import org.bukkit.entity.Player;
-
+import org.bukkit.entity.EnderDragon;
+import org.bukkit.entity.EntityType;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
 import me.mparasha.drogon.Main;
 
-public class HelloCommand implements CommandExecutor{
+
+
+public class DrogonCommand implements CommandExecutor{
 	//private Main plugin;
 	
-	public HelloCommand(Main plugin) {
+	public DrogonCommand(Main plugin) {
 		//this.plugin = plugin;
-		plugin.getCommand("hello").setExecutor(this);
+		plugin.getCommand("drogon").setExecutor(this);
 	}
 	
 	@Override
@@ -24,8 +31,12 @@ public class HelloCommand implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if(p.hasPermission("hello.use")) {
-			p.sendMessage("Hey!");
+		if(p.hasPermission("drogon.use")) {
+			// IMPLEMENTATION TO RIDE ENDER DRAGON
+			World w = Bukkit.getServer().getWorld("World");
+			Location l = new Location(w, 0, 100, 0);
+	        CraftEnderDragon de = (CraftEnderDragon) w.spawnEntity(l, EntityType.ENDER_DRAGON);
+			de.addPassenger(p);
 			return true;
 		}
 		else {
